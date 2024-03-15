@@ -21,12 +21,13 @@ ul {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #2e2f42;
+  color: #4d5ae5;
   letter-spacing: 0.03em;
+  line-height: 1.17;
 }
 
 .logo-text {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .menu-link {
@@ -41,13 +42,14 @@ ul {
 .menu-link:focus {
   color: #404bbf;
 }
-
+.contacts {
+  font-style: normal;
+}
 .contacts-link {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  font-style: normal;
 }
 
 .contacts-link:hover,
@@ -74,8 +76,12 @@ ul {
   letter-spacing: 0.04em;
   color: #fff;
   text-transform: capitalize;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
-.main-page-button:hover {
+.main-page-button:hover,
+.main-page-button:focus {
   background-color: #404bbf;
 }
 
@@ -108,6 +114,7 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .teams-item {
@@ -124,5 +131,9 @@ ul {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.footer .logo-text {
   color: #f4f4fd;
 }
