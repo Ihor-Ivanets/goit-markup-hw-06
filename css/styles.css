@@ -57,10 +57,11 @@ img {
 
 .header-menu {
   display: flex;
-  gap: 76px;
   align-items: center;
 }
-
+.header-menu .logo {
+  margin-right: 76px;
+}
 .menu-link,
 .contacts-link {
   padding: 24px 0;
@@ -145,6 +146,10 @@ img {
   border: none;
   padding: 16px 32px;
   border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-page-button:hover,
@@ -153,14 +158,16 @@ img {
 }
 
 .offers-title {
-  display: none;
+  visibility: hidden;
 }
 
 .offers-list {
   display: flex;
   gap: 24px;
 }
-
+.offers-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 .offers-subtitle,
 .teams-subtitle,
 .portfolio-subtitle {
@@ -202,15 +209,14 @@ img {
 
 .teams-item {
   background-color: #fff;
-  padding-bottom: 32px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.teams-img {
-  margin-bottom: 32px;
+.teams-content {
+  padding: 32px 0;
 }
 
 .teams-subtitle,
@@ -220,14 +226,15 @@ img {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-content {
-  padding: 36px 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
