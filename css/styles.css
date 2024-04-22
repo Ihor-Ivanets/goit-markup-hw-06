@@ -653,7 +653,7 @@ input {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label-checkbox:checked + .form-label-checkbox .form-checkbox-mod {
+.form-checkbox:checked + .form-label-checkbox .form-checkbox-mod {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
