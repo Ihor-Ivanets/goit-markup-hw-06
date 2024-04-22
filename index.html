@@ -491,7 +491,61 @@
           </svg>
         </button>
         <p class="form-title">Leave your contacts and we will call you back</p>
-        <form class="form" name="form" autocomplete="off"></form>
+        <form class="form" name="form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-textarea">
+            <label class="form-label" for="user-comment">Comment</label>
+            <div class="form-group">
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                id="textarea"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
