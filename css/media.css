@@ -100,10 +100,6 @@
     margin-bottom: 36px;
   }
 
-  .offers-item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-
   .offers-subtitle {
     text-align: start;
   }
@@ -111,8 +107,11 @@
     row-gap: 64px;
   }
 
-  .team-item {
-    flex-basis: calc((100% - 24px) / 2);
+  .portfolio-list {
+    row-gap: 72px;
+  }
+  .portfolio-top {
+    min-height: 300px;
   }
 }
 
@@ -142,11 +141,12 @@
   .offers-icon {
     display: flex;
   }
-  .offers-item {
-    flex-basis: calc((100% - 72px) / 4);
-  }
+
   .offers-subtitle {
     font-size: 20px;
     line-height: 1.2;
+  }
+  .portfolio-list {
+    row-gap: 40px;
   }
 }
