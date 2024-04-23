@@ -1,7 +1,19 @@
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero/bg@2x.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   .btn-open {
     display: none;
   }
+
   .navigation {
     display: flex;
     align-items: center;
@@ -10,6 +22,7 @@
   .navigation .logo {
     margin-right: 120px;
   }
+
   .menu {
     display: flex;
     gap: 40px;
@@ -75,6 +88,32 @@
   .contacts-link:focus {
     color: #404bbf;
   }
+
+  .hero {
+    padding: 112px 0;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    max-width: 496px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+
+  .offers-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .offers-subtitle {
+    text-align: start;
+  }
+  .team-list {
+    row-gap: 64px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 @media (min-width: 1158px) {
@@ -88,5 +127,26 @@
   .contacts-link {
     font-size: 16px;
     padding: 16px 0;
+  }
+
+  .hero {
+    padding: 188px 0;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  .section {
+    padding: 120px 0;
+  }
+  .offers-icon {
+    display: flex;
+  }
+  .offers-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .offers-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }

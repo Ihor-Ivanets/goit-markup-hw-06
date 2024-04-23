@@ -51,6 +51,34 @@ input {
   padding: 0 15px;
 }
 
+.section {
+  padding: 96px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -186,6 +214,7 @@ input {
   align-self: center;
   display: flex;
   gap: 40px;
+  justify-content: center;
 }
 
 .social-link {
@@ -211,32 +240,11 @@ input {
   fill: #f4f4fd;
 }
 
-/* 
-
-+
-
-
-.section {
-  padding: 120px 0;
-}
-
-.section-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
-
-
 .hero {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -245,16 +253,16 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
+  padding: 72px 0;
 }
 
 .hero-title {
   color: #fff;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  margin: 0 auto 48px auto;
+  max-width: 216px;
+  margin: 0 auto 72px auto;
 }
 
 .button {
@@ -282,33 +290,10 @@ input {
   background-color: #404bbf;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.offers-list {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.offers-item {
-  flex-basis: calc((100% - 72px) / 4);
-}
-
 .offers-icon {
   max-width: 100%;
   min-height: 112px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: #f4f4fd;
@@ -317,12 +302,20 @@ input {
   margin-bottom: 8px;
 }
 
+.offers-list {
+  display: flex;
+  row-gap: 72px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+}
+
 .offers-subtitle {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
   margin-bottom: 8px;
 }
 
@@ -337,16 +330,18 @@ input {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 72px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-item {
+  max-width: 264px;
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-body {
@@ -368,6 +363,14 @@ input {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+
+.team .social {
+  gap: 24px;
+}
+/* 
+
+
+
 +
 .social {
   display: flex;
