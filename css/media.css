@@ -100,6 +100,10 @@
     margin-bottom: 36px;
   }
 
+  .offers-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
   .offers-subtitle {
     text-align: start;
   }
@@ -112,6 +116,32 @@
   }
   .portfolio-top {
     min-height: 300px;
+  }
+
+  .page-footer .container {
+    padding-left: 92px;
+    padding-right: 92px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 24px;
+  }
+
+  .page-footer .logo {
+    text-align: start;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .subscribe-title {
+    text-align: start;
+  }
+
+  .footer-input {
+    width: 264px;
   }
 }
 
@@ -138,6 +168,11 @@
   .section {
     padding: 120px 0;
   }
+
+  .offers-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
   .offers-icon {
     display: flex;
   }
@@ -148,5 +183,23 @@
   }
   .portfolio-list {
     row-gap: 40px;
+  }
+
+  .page-footer {
+    padding: 100px 0;
+  }
+
+  .page-footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 0;
+  }
+
+  .page-footer-about {
+    margin-right: 120px;
+  }
+
+  .page-footer-social {
+    margin-right: 80px;
   }
 }
