@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="page-header">
@@ -24,15 +25,15 @@
             >Web<span class="logo-color">Studio</span>
           </a>
           <ul class="menu">
-            <li class="menu-list">
+            <li class="menu-item">
               <a class="menu-link menu-link-active" href="./index.html"
                 >Studio</a
               >
             </li>
-            <li class="menu-list">
+            <li class="menu-item">
               <a class="menu-link" href="">Portfolio</a>
             </li>
-            <li class="menu-list">
+            <li class="menu-item">
               <a class="menu-link" href="">Contacts</a>
             </li>
           </ul>
@@ -51,9 +52,82 @@
             </li>
           </ul>
         </address>
+        <button class="btn-open" type="button">
+          <svg class="btn-open-icon" width="17" height="14">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="header-mobile">
+          <div class="container">
+            <nav class="mobile-navigation">
+              <ul class="mobile-menu">
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="mobile-contacts">
+              <ul class="mobile-contacts-list">
+                <li class="mobile-contacts-item">
+                  <a
+                    class="mobile-contacts-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mobile-contacts-item">
+                  <a class="mobile-contacts-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <button class="btn-close" type="button">
+              <svg class="btn-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="social">
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -564,6 +638,6 @@
           <button class="button" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
